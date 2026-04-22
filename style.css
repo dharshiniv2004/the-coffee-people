@@ -117,9 +117,11 @@ nav a:hover {
 
 /* Hero Banner */
 
+/* Hero Banner */
+
 .hero {
 
-    height: 400px;
+    height: 450px;
 
     background-image: url('images/hero.jpg');
 
@@ -127,26 +129,57 @@ nav a:hover {
 
     background-position: center;
 
+    background-repeat: no-repeat;
+
     display: flex;
 
     align-items: center;
 
     justify-content: center;
 
+    position: relative;
+
 }
+
+
+/* Dark overlay for better text visibility */
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(0,0,0,0.4);
+
+}
+
+
+/* Hero Text */
 
 .hero-text {
 
     color: white;
 
-    font-size: 38px;
+    font-size: 42px;
 
     font-weight: bold;
 
+    text-align: center;
+
     text-shadow: 3px 3px 10px black;
 
-}
+    z-index: 1;
 
+}
 
 /* Food Row Images */
 
