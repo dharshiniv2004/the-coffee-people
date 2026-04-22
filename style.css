@@ -117,8 +117,6 @@ nav a:hover {
 
 /* Hero Banner */
 
-/* Hero Banner */
-
 .hero {
 
     height: 450px;
@@ -182,6 +180,7 @@ nav a:hover {
 }
 
 /* Food Row Images */
+/* Food Images Row */
 
 .food-row {
 
@@ -189,24 +188,21 @@ nav a:hover {
 
     justify-content: center;
 
+    gap: 20px;
+
     flex-wrap: wrap;
 
 }
 
 .food-row img {
 
-    width: 280px;
+    width: 300px;
 
-    height: 200px;
-
-    object-fit: cover;
+    height: auto;   /* keeps original proportion */
 
     border-radius: 12px;
 
-    margin: 10px;
-
 }
-
 
 /* Feature Cards */
 
