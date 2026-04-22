@@ -1,14 +1,23 @@
 /* Coffee Theme Styling */
 
+/* Import Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap');
+
 body {
+
     margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
+
+    font-family: 'Poppins', sans-serif;
 
     background: linear-gradient(-45deg,#3e2723,#5d4037,#8d6e63,#3e2723);
+
     background-size: 400% 400%;
 
     animation: coffeeBG 12s ease infinite;
+
 }
+
 
 /* Moving Background */
 
@@ -39,7 +48,9 @@ header {
 
 header h1 {
 
-    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+
+    font-size: 48px;
 
     margin: 0;
 
@@ -47,7 +58,7 @@ header h1 {
 
 header p {
 
-    font-size: 18px;
+    font-size: 20px;
 
 }
 
@@ -73,7 +84,7 @@ nav {
 
     text-align: center;
 
-    padding: 12px;
+    padding: 14px;
 
 }
 
@@ -87,7 +98,7 @@ nav a {
 
     font-weight: bold;
 
-    font-size: 17px;
+    font-size: 18px;
 
 }
 
@@ -102,24 +113,68 @@ nav a:hover {
 
 .container {
 
-    background: rgba(255,255,255,0.92);
+    background: rgba(255,255,255,0.95);
 
     margin: 25px;
 
-    padding: 30px;
+    padding: 35px;
 
-    border-radius: 12px;
+    border-radius: 14px;
 
     text-align: center;
 
 }
 
 
+/* Welcome Title Styling */
+
+.container h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 42px;
+
+    color: #3e2723;
+
+    margin-bottom: 10px;
+
+}
+
+/* Decorative Line */
+
+.container h2::after {
+
+    content: "";
+
+    display: block;
+
+    width: 90px;
+
+    height: 3px;
+
+    background: #8d6e63;
+
+    margin: 12px auto;
+
+}
+
+
+/* Paragraph Styling */
+
+.container p {
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+
 /* Hero Banner */
-
-.hero {
-
-    /* Hero Banner */
 
 .hero {
 
@@ -169,7 +224,7 @@ nav a:hover {
 
     color: white;
 
-    font-size: 42px;
+    font-size: 48px;
 
     font-weight: bold;
 
@@ -180,6 +235,8 @@ nav a:hover {
     z-index: 1;
 
 }
+
+
 /* Food Images Row */
 
 .food-row {
@@ -195,8 +252,6 @@ nav a:hover {
     margin-top: 25px;
 
 }
-
-/* Food Images */
 
 .food-row img {
 
@@ -214,13 +269,13 @@ nav a:hover {
 
 }
 
-/* Hover Effect */
-
 .food-row img:hover {
 
     transform: scale(1.06);
 
 }
+
+
 /* Feature Cards */
 
 .card {
@@ -231,11 +286,11 @@ nav a:hover {
 
     margin: 20px;
 
-    padding: 20px;
+    padding: 22px;
 
     background: white;
 
-    border-radius: 12px;
+    border-radius: 14px;
 
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 
@@ -244,7 +299,7 @@ nav a:hover {
 }
 
 
-/* Feature Icons Images */
+/* Feature Icons */
 
 .feature-img {
 
@@ -256,7 +311,7 @@ nav a:hover {
 
     border-radius: 50%;
 
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 
 }
 
@@ -288,9 +343,9 @@ nav a:hover {
 
     color: white;
 
-    padding: 30px;
+    padding: 35px;
 
-    border-radius: 12px;
+    border-radius: 14px;
 
     max-width: 900px;
 
@@ -308,9 +363,48 @@ nav a:hover {
 
 .about-content p {
 
-    font-size: 17px;
+    font-size: 19px;
 
-    line-height: 1.6;
+    line-height: 1.7;
+
+}
+
+
+/* Love List */
+
+.love-list {
+
+    list-style: none;
+
+    padding-left: 0;
+
+    font-size: 19px;
+
+}
+
+.love-list li {
+
+    margin: 12px 0;
+
+    color: white;
+
+    position: relative;
+
+    padding-left: 28px;
+
+}
+
+.love-list li::before {
+
+    content: "✔";
+
+    position: absolute;
+
+    left: 0;
+
+    color: #ffd54f;
+
+    font-weight: bold;
 
 }
 
@@ -325,47 +419,8 @@ footer {
 
     text-align: center;
 
-    padding: 15px;
+    padding: 18px;
 
-}
-/* Remove default bullets */
-
-.love-list {
-
-    list-style: none;
-
-    padding-left: 0;
-
-    font-size: 18px;
-
-}
-
-/* Each line */
-
-.love-list li {
-
-    margin: 12px 0;
-
-    color: white;
-
-    position: relative;
-
-    padding-left: 28px;
-
-}
-
-/* Custom Tick */
-
-.love-list li::before {
-
-    content: "✔";
-
-    position: absolute;
-
-    left: 0;
-
-    color: #ffd54f;
-
-    font-weight: bold;
+    font-size: 17px;
 
 }
