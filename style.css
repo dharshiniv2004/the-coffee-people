@@ -92,3 +92,56 @@ footer {
     text-align: center;
     padding: 15px;
 }
+/* Logo */
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Hero Banner */
+
+.hero {
+
+height: 400px;
+
+background-image: url('images/hero.jpg');
+
+background-size: cover;
+background-position: center;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.hero-text {
+
+color: white;
+font-size: 38px;
+font-weight: bold;
+
+text-shadow: 3px 3px 10px black;
+
+}
+
+/* Cards */
+
+.card {
+
+display: inline-block;
+
+width: 260px;
+
+margin: 20px;
+padding: 20px;
+
+background: white;
+
+border-radius: 12px;
+
+box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+
+}
