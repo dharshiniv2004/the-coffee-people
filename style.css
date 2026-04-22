@@ -311,29 +311,41 @@ footer {
     padding: 15px;
 
 }
-/* Why Customers List */
+/* Remove default bullets */
 
 .love-list {
 
     list-style: none;
 
-    padding: 0;
+    padding-left: 0;
 
     font-size: 18px;
 
 }
 
+/* Each line */
+
 .love-list li {
 
-    margin: 10px 0;
+    margin: 12px 0;
 
     color: white;
 
+    position: relative;
+
+    padding-left: 28px;
+
 }
+
+/* Custom Tick */
 
 .love-list li::before {
 
-    content: "✔ ";
+    content: "✔";
+
+    position: absolute;
+
+    left: 0;
 
     color: #ffd54f;
 
