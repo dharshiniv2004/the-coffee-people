@@ -1,13 +1,21 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap');
+
 /* Coffee Theme Styling */
 
 body {
+
     margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
+
+    font-family: 'Poppins', sans-serif;
 
     background: linear-gradient(-45deg,#3e2723,#5d4037,#8d6e63,#3e2723);
+
     background-size: 400% 400%;
 
     animation: coffeeBG 12s ease infinite;
+
 }
 
 /* Moving Background */
@@ -33,13 +41,15 @@ header {
 
     text-align: center;
 
-    padding: 30px;
+    padding: 25px;
 
 }
 
 header h1 {
 
-    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+
+    font-size: 44px;
 
     margin: 0;
 
@@ -56,7 +66,7 @@ header p {
 
 .logo {
 
-    width: 120px;
+    width: 110px;
 
     height: auto;
 
@@ -81,7 +91,7 @@ nav a {
 
     color: #ffe0b2;
 
-    margin: 18px;
+    margin: 16px;
 
     text-decoration: none;
 
@@ -98,32 +108,11 @@ nav a:hover {
 }
 
 
-/* Container */
-
-.container {
-
-    background: rgba(255,255,255,0.92);
-
-    margin: 25px;
-
-    padding: 30px;
-
-    border-radius: 12px;
-
-    text-align: center;
-
-}
-
-
-/* Hero Banner */
+/* Hero Banner (FIXED) */
 
 .hero {
 
-    /* Hero Banner */
-
-.hero {
-
-    height: 450px;
+    height: 420px;
 
     background-image: url("images/hero.jpg");
 
@@ -151,10 +140,6 @@ nav a:hover {
 
     position: absolute;
 
-    top: 0;
-
-    left: 0;
-
     width: 100%;
 
     height: 100%;
@@ -167,11 +152,11 @@ nav a:hover {
 
 .hero-text {
 
+    font-family: 'Playfair Display', serif;
+
+    font-size: 40px;
+
     color: white;
-
-    font-size: 42px;
-
-    font-weight: bold;
 
     text-align: center;
 
@@ -180,7 +165,44 @@ nav a:hover {
     z-index: 1;
 
 }
-/* Food Images Row */
+
+
+/* Container */
+
+.container {
+
+    background: rgba(255,255,255,0.95);
+
+    margin: 25px;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+}
+
+.container h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 32px;
+
+    color: #3e2723;
+
+}
+
+.container p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+/* Food Images Row (FIXED ALIGNMENT) */
 
 .food-row {
 
@@ -188,46 +210,44 @@ nav a:hover {
 
     justify-content: center;
 
-    gap: 30px;
+    gap: 25px;
 
     flex-wrap: wrap;
 
-    margin-top: 25px;
+    margin-top: 20px;
 
 }
 
-/* Food Images */
-
 .food-row img {
 
-    width: 280px;
+    width: 220px;
 
-    height: auto;
+    height: 260px;
 
-    max-height: 420px;
+    object-fit: cover;
 
-    border-radius: 15px;
+    border-radius: 12px;
 
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.35);
 
     transition: transform 0.3s ease;
 
 }
 
-/* Hover Effect */
-
 .food-row img:hover {
 
-    transform: scale(1.06);
+    transform: scale(1.05);
 
 }
-/* Feature Cards */
+
+
+/* Cards Section */
 
 .card {
 
     display: inline-block;
 
-    width: 260px;
+    width: 250px;
 
     margin: 20px;
 
@@ -237,14 +257,12 @@ nav a:hover {
 
     border-radius: 12px;
 
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-
-    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 
 }
 
 
-/* Feature Icons Images */
+/* Circular Feature Images (RESTORED SMALL ICONS) */
 
 .feature-img {
 
@@ -255,6 +273,8 @@ nav a:hover {
     object-fit: cover;
 
     border-radius: 50%;
+
+    border: 3px solid #8d6e63;
 
     margin-bottom: 10px;
 
@@ -315,20 +335,7 @@ nav a:hover {
 }
 
 
-/* Footer */
-
-footer {
-
-    background: #3e2723;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 15px;
-
-}
-/* Remove default bullets */
+/* Love List (Tick List) */
 
 .love-list {
 
@@ -339,8 +346,6 @@ footer {
     font-size: 18px;
 
 }
-
-/* Each line */
 
 .love-list li {
 
@@ -354,8 +359,6 @@ footer {
 
 }
 
-/* Custom Tick */
-
 .love-list li::before {
 
     content: "✔";
@@ -367,5 +370,20 @@ footer {
     color: #ffd54f;
 
     font-weight: bold;
+
+}
+
+
+/* Footer */
+
+footer {
+
+    background: #3e2723;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
 
 }
