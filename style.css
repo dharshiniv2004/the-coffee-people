@@ -311,3 +311,32 @@ footer {
     padding: 15px;
 
 }
+/* Why Customers List */
+
+.love-list {
+
+    list-style: none;
+
+    padding: 0;
+
+    font-size: 18px;
+
+}
+
+.love-list li {
+
+    margin: 10px 0;
+
+    color: white;
+
+}
+
+.love-list li::before {
+
+    content: "✔ ";
+
+    color: #ffd54f;
+
+    font-weight: bold;
+
+}
