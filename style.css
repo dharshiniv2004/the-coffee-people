@@ -119,9 +119,13 @@ nav a:hover {
 
 .hero {
 
+    /* Hero Banner */
+
+.hero {
+
     height: 450px;
 
-    background-image: url('images/hero.jpg');
+    background-image: url("images/hero.jpg");
 
     background-size: cover;
 
@@ -139,8 +143,7 @@ nav a:hover {
 
 }
 
-
-/* Dark overlay for better text visibility */
+/* Dark Overlay */
 
 .hero::before {
 
@@ -160,7 +163,6 @@ nav a:hover {
 
 }
 
-
 /* Hero Text */
 
 .hero-text {
@@ -178,8 +180,6 @@ nav a:hover {
     z-index: 1;
 
 }
-
-/* Food Row Images */
 /* Food Images Row */
 
 .food-row {
@@ -188,22 +188,39 @@ nav a:hover {
 
     justify-content: center;
 
-    gap: 20px;
+    gap: 30px;
 
     flex-wrap: wrap;
 
+    margin-top: 25px;
+
 }
+
+/* Food Images */
 
 .food-row img {
 
-    width: 300px;
+    width: 280px;
 
-    height: auto;   /* keeps original proportion */
+    height: auto;
 
-    border-radius: 12px;
+    max-height: 420px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+
+    transition: transform 0.3s ease;
 
 }
 
+/* Hover Effect */
+
+.food-row img:hover {
+
+    transform: scale(1.06);
+
+}
 /* Feature Cards */
 
 .card {
