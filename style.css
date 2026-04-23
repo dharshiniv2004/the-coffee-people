@@ -672,3 +672,69 @@ footer {
 }
 
 }
+/* ===== CONTACT BACKGROUND STYLE ===== */
+
+.contact-bg {
+
+    background-image: url("images/contact-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    padding: 80px 20px;
+
+}
+
+
+/* Overlay Box */
+
+.contact-overlay {
+
+    background: rgba(0,0,0,0.65);
+
+    color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    max-width: 700px;
+
+    margin: auto;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+
+}
+
+
+/* Contact Headings */
+
+.contact-overlay h2 {
+
+    color: #ffd54f;
+
+    font-size: 34px;
+
+}
+
+.contact-overlay h3 {
+
+    margin-top: 18px;
+
+    color: #ffe0b2;
+
+}
+
+
+/* Map Box */
+
+.map-box {
+
+    margin-top: 20px;
+
+}
