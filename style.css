@@ -565,3 +565,110 @@ footer {
 }
 
 }
+/* ===== CONTACT PAGE ===== */
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+    margin-top: 20px;
+
+}
+
+
+/* Contact Info */
+
+.contact-info {
+
+    text-align: left;
+
+    font-size: 17px;
+
+}
+
+.contact-info h3 {
+
+    color: #3e2723;
+
+    margin-top: 15px;
+
+}
+
+
+/* Contact Form */
+
+.contact-form {
+
+    text-align: left;
+
+}
+
+.contact-form input,
+.contact-form textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin: 8px 0;
+
+    border-radius: 8px;
+
+    border: 1px solid #ccc;
+
+    font-size: 15px;
+
+}
+
+
+/* Button */
+
+.contact-form button {
+
+    background: #3e2723;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+.contact-form button:hover {
+
+    background: #5d4037;
+
+}
+
+
+/* Map */
+
+.map-box {
+
+    margin-top: 20px;
+
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+.contact-grid {
+
+    grid-template-columns: 1fr;
+
+}
+
+}
