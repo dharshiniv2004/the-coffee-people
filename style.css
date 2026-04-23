@@ -738,3 +738,85 @@ footer {
     margin-top: 20px;
 
 }
+/* ===== CONTACT BACKGROUND FIX ===== */
+
+.contact-bg {
+
+    background-image: url("images/contact-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    min-height: 80vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* Overlay Box */
+
+.contact-overlay {
+
+    background: rgba(0,0,0,0.7);
+
+    color: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    max-width: 650px;
+
+    margin: 40px;
+
+    text-align: center;
+
+}
+
+
+/* Social Icons */
+
+.social-icons {
+
+    margin-top: 15px;
+
+}
+
+
+.social-icons a {
+
+    color: white;
+
+    font-size: 28px;
+
+    margin: 0 12px;
+
+    transition: 0.3s;
+
+}
+
+
+/* WhatsApp */
+
+.social-icons a:hover .fa-whatsapp {
+
+    color: #25D366;
+
+}
+
+
+/* Instagram */
+
+.social-icons a:hover .fa-instagram {
+
+    color: #E1306C;
+
+}
